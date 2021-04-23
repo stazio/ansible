@@ -100,7 +100,7 @@ class StrategyModule(StrategyBase):
 
             hosts_left = self.get_hosts_left(iterator)
 
-            if len(hosts_left) == 0:
+            if False and len(hosts_left) == 0:
                 self._tqm.send_callback('v2_playbook_on_no_hosts_remaining')
                 result = False
                 break
